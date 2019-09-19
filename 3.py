@@ -8,3 +8,4 @@ def is_power_of_two(n):
 		print('True')
 	else:
 		print('False')
+print(is_power_of_two(a))

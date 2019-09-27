@@ -1,9 +1,11 @@
 #5
-a = input()
 def is_self_dividing(n):
-	for i in n:
-		if int(n) % int(i) == 0:
-			return True
+    d = 0
+    k = len(str(n))
+    for i in str(n):
+        if n % int(i) == 0:
+            d += 1
+        if d == k:
+            return True
         else:
             return False
-print(is_self_dividing(a))

@@ -1,10 +1,12 @@
 #2
-#только для целых чисел пока
+#не могу понять как вещественные числа могут быть красивыми, им же всегда False
 def get_digit_sum(n):
     s = 0
-    while n != 0:
-        s += n % 10
-        n = n // 10
-    return s  
+    for i in str(abs(n)):
+        if i == '.':
+            continue
+        else:
+            s+= int(i)
+    return s
 def is_beauty(n):
     return n % get_digit_sum(n) == 0

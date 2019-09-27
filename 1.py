@@ -5,6 +5,6 @@ def get_digit_sum(n):
     for i in str(abs(n)):
         if i == '.':
             continue
-    else:
-        s+= int(i)
+        else:
+            s+= int(i)
     return s

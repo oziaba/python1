@@ -1,7 +1,9 @@
 #2
-a = input()
 def get_digit_sum(n):
-    return(sum(map(int,n)))
+    s = 0
+    while n != 0:
+        s += n % 10
+        n = n // 10
+    return s  
 def is_beauty(n):
-    return int(n) % get_digit_sum(n) == 0
-print(is_beauty(a))
+    return n % get_digit_sum(n) == 0

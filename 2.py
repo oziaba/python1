@@ -1,4 +1,5 @@
 #2
+#только для целых чисел пока
 def get_digit_sum(n):
     s = 0
     while n != 0:

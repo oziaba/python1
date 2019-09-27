@@ -1,5 +1,7 @@
 #1
-a = input()
 def get_digit_sum(n):
-    return(sum(map(int,n)))
-print(get_digit_sum(a))
+	s = 0
+	while n != 0:
+		s += n % 10
+		n = n // 10
+	return s

@@ -1,7 +1,10 @@
 #1
+#для целых и вещественных
 def get_digit_sum(n):
-	s = 0
-	while n != 0:
-		s += n % 10
-		n = n // 10
-	return s
+    s = 0
+    for i in str(abs(n)):
+        if i == '.':
+            continue
+    else:
+        s+= int(i)
+    return s
